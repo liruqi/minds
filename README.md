@@ -21,7 +21,7 @@ Minds is split into multiple repositories:
 ## Development Installation
 
 1. Run `sh init.sh` in order to install the front and engine repositories
-2. Run `docker-compose up -d nginx`
+2. Run `docker-compose up -d nginx && docker-compose up`
 3. Run `docker-compose exec cassandra nodetool enablethrift`
 4. Run `docker-compose up installer` (one time only.. initial username: minds / password: password)
 5. Run `docker-compose up front-build` 
